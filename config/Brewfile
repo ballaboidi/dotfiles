@@ -33,8 +33,6 @@ brew "cffi"
 brew "mpdecimal"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# Clone of cat(1) with syntax highlighting and Git integration
-brew "bat"
 # Asynchronous DNS library
 brew "c-ares"
 # GNU internationalization (i18n) and localization (l10n) library
@@ -118,7 +116,7 @@ brew "mandoc"
 # Java-based project management
 brew "maven"
 # Open source relational database management system
-brew "mysql", restart_service: :changed
+brew "mysql"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP/2 C Library
@@ -157,8 +155,6 @@ brew "python@3.10"
 brew "python@3.11"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# Develop and deploy code with zero configuration
-brew "railway"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
@@ -202,14 +198,8 @@ cask "font-fira-code-nerd-font"
 cask "google-chrome"
 # Tool to optimise images to a smaller size
 cask "imageoptim"
-# Web development solution with Apache, Nginx, PHP & MySQL
-cask "mamp"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# Get up and running with large language models locally
-cask "ollama"
-# Desktop virtualization software
-cask "parallels"
 # Browser for ambitious developers
 cask "polypane"
 # Collaboration platform for API development
@@ -222,12 +212,8 @@ cask "rectangle"
 cask "sequel-ace"
 # Team communication and collaboration software
 cask "slack"
-# Graphical client for Git version control
-cask "sourcetree"
 # Text editor for code, markup and prose
 cask "sublime-text"
-# Development environment
-cask "vagrant"
 # Open-source code editor
 cask "visual-studio-code"
 # Rust-based terminal
