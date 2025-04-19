@@ -55,16 +55,22 @@ brew "dnsmasq", restart_service: :changed
 brew "docker"
 # Text processing system for reStructuredText
 brew "docutils"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Generic library support script
 brew "libtool"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GNU database manager
 brew "gdbm"
 # This library is for the GeoIP Legacy format (dat)
 brew "geoip"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
 # Distributed revision control system
@@ -116,7 +122,7 @@ brew "mandoc"
 # Java-based project management
 brew "maven"
 # Open source relational database management system
-brew "mysql"
+brew "mysql", restart_service: :changed
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP/2 C Library
@@ -145,6 +151,8 @@ brew "php@8.2"
 brew "php@8.3"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Object-relational database system
 brew "postgresql@14"
 # Monitor data's progress through a pipe
@@ -159,22 +167,32 @@ brew "python@3.9"
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# SVG rendering tool and library
+brew "resvg"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Safe, concurrent, practical language
 brew "rust"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 # Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
 # Nodejs-based tool for optimizing SVG vector graphics files
 brew "svgo"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line interface for WordPress
 brew "wp-cli"
 # JavaScript package manager
 brew "yarn"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # General-purpose scripting language
 brew "shivammathur/php/php@7.2"
 # General-purpose scripting language
@@ -194,6 +212,7 @@ cask "dbngin"
 # Web browser
 cask "firefox"
 cask "font-fira-code-nerd-font"
+cask "font-symbols-only-nerd-font"
 # Web browser
 cask "google-chrome"
 # Tool to optimise images to a smaller size
