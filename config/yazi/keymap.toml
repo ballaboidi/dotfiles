@@ -1,2 +1,5 @@
-[keys.normal]
-"g v" = ":shell nvim {cwd}"
+[manager]
+prepend_keymap = [
+	{ on = "<C-a>", run = ":shell nvim .", desc = "Single command with `Ctrl + a`" },
+]
+
