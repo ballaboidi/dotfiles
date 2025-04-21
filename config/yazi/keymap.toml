@@ -1,0 +1,2 @@
+[keys.normal]
+"g v" = ":shell nvim {cwd}"
