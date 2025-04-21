@@ -62,7 +62,7 @@
         {
           "foreground": "p:blue",
           "style": "plain",
-          "template": "\u2570\u2500",
+          "template": "\u2570\u2500\u276F",
           "type": "text"
         }
       ],
