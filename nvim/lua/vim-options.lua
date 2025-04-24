@@ -4,5 +4,6 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.opt.termguicolors = true
 vim.g.mapleader = " "
+vim.g.user_emmet_leader_key="<C-e>"
 vim.opt.number = true          -- Show absolute line number
 vim.opt.relativenumber = true -- Show relative line numbers
