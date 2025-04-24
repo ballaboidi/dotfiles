@@ -7,4 +7,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+alias drush=vendor/drush/drush/drush
+
 eval "$(oh-my-posh init zsh --config ~/dotfiles/posh/posh-config.json)"

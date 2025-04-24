@@ -43,5 +43,8 @@ return {
 	},
   {
     "mattn/emmet-vim"
+  },
+  {
+    "numToStr/Comment.nvim",
   }
 }

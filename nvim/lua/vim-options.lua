@@ -25,3 +25,8 @@ end, { desc = "Open horizontal terminal" })
 vim.keymap.set("n", "<leader>v", function()
   vim.cmd("vsplit | terminal")
 end, { desc = "Open vertical terminal" })
+
+-- Yank to system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+-- Paste from system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
