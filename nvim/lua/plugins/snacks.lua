@@ -12,6 +12,11 @@ return {
     indent = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
+    lazygit = {
+      enabled = true,
+      float = { border = "rounded" },
+      configure = true
+    },
     notifier = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
@@ -19,4 +24,7 @@ return {
     statuscolumn = { enabled = true },
     words = { enabled = true },
   },
+  keys = {
+    { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
+  }
 }
