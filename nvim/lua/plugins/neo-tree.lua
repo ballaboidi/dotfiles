@@ -7,8 +7,7 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	lazy = false, -- neo-tree will lazily load itself
-	opts = {},
 	config = function()
-		vim.keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal left<CR>")
+    vim.keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal left<CR>")
 	end,
 }
