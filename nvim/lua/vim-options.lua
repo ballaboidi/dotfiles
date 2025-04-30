@@ -31,4 +31,6 @@ end, { desc = "Open vertical terminal" })
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
 -- Paste from system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
-
+vim.keymap.set("n", "<leader>dn", function()
+  vim.diagnostic.open_float(nil, { border = "rounded" })
+end, { desc = "Show diagnostics in floating window" })

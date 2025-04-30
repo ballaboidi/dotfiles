@@ -7,6 +7,7 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.phpcbf,
+        null_ls.builtins.diagnostics.phpstan,
 			},
 		})
 
