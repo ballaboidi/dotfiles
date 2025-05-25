@@ -10,3 +10,5 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 alias drush=vendor/drush/drush/drush
 
 eval "$(oh-my-posh init zsh --config ~/dotfiles/posh/posh-config.json)"
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
