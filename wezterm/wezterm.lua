@@ -17,7 +17,7 @@ config.colors = {
   background = "#192330",
 }
 
-config.window_decorations = "TITLE"
+config.window_decorations = "TITLE|RESIZE"
 
 config.window_frame = {
   -- Title bar colors inspired by Nightfox palette
