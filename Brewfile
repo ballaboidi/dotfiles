@@ -5,248 +5,132 @@ tap "homebrew/services"
 tap "nicoverbruggen/cask"
 tap "romkatv/powerlevel10k"
 tap "shivammathur/php"
-# Search tool like grep, but optimized for programmers
 brew "ack"
-# Generic-purpose lossless compression algorithm by Google
 brew "brotli"
-# Library and utilities for processing GIFs
 brew "giflib"
-# Library for manipulating PNG images
 brew "libpng"
-# General-purpose data compression with high compression ratio
 brew "xz"
-# Image format providing lossless and lossy compression for web images
 brew "webp"
-# Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Macro processing language
 brew "m4"
-# Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# C parser in Python
 brew "pycparser"
-# C Foreign Function Interface for Python
 brew "cffi"
-# Library for decimal floating point arithmetic
 brew "mpdecimal"
-# Official Amazon AWS command-line interface
 brew "awscli"
-# Asynchronous DNS library
 brew "c-ares"
-# GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
-# Perl compatible regular expressions library with a new API
 brew "pcre2"
-# Core application library for C
 brew "glib"
-# Low-level library for pixel manipulation
 brew "pixman"
-# Vector graphics library with cross-device output support
 brew "cairo"
-# Cross-platform make
 brew "cmake"
-# Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Lightweight DNS forwarder and DHCP server
 brew "dnsmasq", restart_service: :changed
-# Pack, ship and run any application as a lightweight container
 brew "docker"
-# Text processing system for reStructuredText
 brew "docutils"
-# Simple, fast and user-friendly alternative to find
 brew "fd"
-# Framework for layout and rendering of i18n text
 brew "pango"
-# Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Generic library support script
 brew "libtool"
-# Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU database manager
 brew "gdbm"
-# This library is for the GeoIP Legacy format (dat)
 brew "geoip"
-# Interpreter for PostScript and PDF
 brew "ghostscript"
-# Distributed revision control system
 brew "git"
-# Git extension for versioning large files
 brew "git-lfs"
-# GNU grep, egrep and fgrep
 brew "grep"
-# Text-based UI library
 brew "ncurses"
-# Improved top (interactive process viewer)
 brew "htop"
-# Apache HTTP server
 brew "httpd"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
-# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
-# Tools and libraries to manipulate images in many formats
 brew "imagemagick"
-# Implementation of malloc emphasizing fragmentation avoidance
 brew "jemalloc"
-# Image manipulation library
 brew "jpeg"
-# Lightweight and flexible command-line JSON processor
 brew "jq"
-# Network authentication protocol
 brew "krb5"
-# Simple terminal UI for git commands
 brew "lazygit"
-# DNS library written in C
 brew "ldns"
-# CBOR protocol implementation for C and others
 brew "libcbor"
-# Asynchronous event library
 brew "libev"
-# Provides library functionality for FIDO U2F & FIDO 2.0, including USB
 brew "libfido2"
-# Library to render SVG files using Cairo
 brew "librsvg"
-# Multi-platform support library with a focus on asynchronous I/O
 brew "libuv"
-# YAML Parser
 brew "libyaml"
-# Get the terminal window size on macOS
 brew "macos-term-size"
-# Web and API based SMTP testing tool
 brew "mailhog"
-# UNIX manpage compiler toolset
 brew "mandoc"
-# Java-based project management
 brew "maven"
-# Open source relational database management system
 brew "mysql"
-# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# HTTP/2 C Library
 brew "nghttp2"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx", restart_service: :changed
-# Small build system for use with gyp or CMake
 brew "ninja"
-# Platform built on V8 to build network applications
 brew "node"
-# Prompt theme engine for any shell
 brew "oh-my-posh"
-# OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
-# Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
-# Perl compatible regular expressions library
 brew "pcre"
-# General-purpose scripting language
 brew "php", link: false
-# General-purpose scripting language
 brew "php@8.1"
-# General-purpose scripting language
 brew "php@8.2"
-# General-purpose scripting language
-brew "php@8.3"
-# Package compiler and linker metadata toolkit
+brew "php@8.3", link: true
 brew "pkgconf"
-# PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-# Object-relational database system
 brew "postgresql@14"
-# Monitor data's progress through a pipe
 brew "pv"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# Persistent key-value database, with built-in net interface
 brew "redis"
-# Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# SVG rendering tool and library
 brew "resvg"
-# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Safe, concurrent, practical language
 brew "rust"
-# Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
-# 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
-# Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
-# Nodejs-based tool for optimizing SVG vector graphics files
 brew "svgo"
-# Terminal multiplexer
 brew "tmux"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Command-line interface for WordPress
 brew "wp-cli"
-# JavaScript package manager
 brew "yarn"
-# Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
-# Shell extension to navigate your filesystem faster
 brew "zoxide"
-# General-purpose scripting language
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 brew "shivammathur/php/php@7.2"
-# General-purpose scripting language
 brew "shivammathur/php/php@7.3"
-# General-purpose scripting language
-brew "shivammathur/php/php@7.4", link: true
-# General-purpose scripting language
+brew "shivammathur/php/php@7.4"
 brew "shivammathur/php/php@8.0"
-# Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
-# Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Server and cloud storage browser
 cask "cyberduck"
-# Database version management tool
 cask "dbngin"
-# Web browser
 cask "firefox"
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
-# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Web browser
 cask "google-chrome"
-# Tool to optimise images to a smaller size
 cask "imageoptim"
-# Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# Browser for ambitious developers
+cask "notion-calendar"
+cask "notion-mail"
 cask "polypane"
-# Collaboration platform for API development
 cask "postman"
-# Control your tools with a few keystrokes
 cask "raycast"
-# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# MySQL/MariaDB database management
 cask "sequel-ace"
-# Team communication and collaboration software
 cask "slack"
-# Text editor for code, markup and prose
 cask "sublime-text"
-# Open-source code editor
 cask "visual-studio-code"
-# Rust-based terminal
-cask "warp"
-# Native desktop client for WhatsApp
+cask "wezterm@nightly"
 cask "whatsapp"
-# HTML to PDF renderer
 cask "wkhtmltopdf"
-# Gecko based web browser
-cask "zen-browser"
+cask "zen"
 vscode "aaron-bond.better-comments"
 vscode "adpyke.codesnap"
 vscode "ahdesign.language-antlers"
